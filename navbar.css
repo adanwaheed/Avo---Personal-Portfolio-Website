@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Nunito Sans", Arial, sans-serif;
+}
+.navbar-brand {
+    color: beige;
+    font-size: 1.875rem;
+    padding: 2%;
+    margin-left: 10rem;
+}
+.navbar-brand span {
+    color: #dc3545;
+}
+.navbar-brand:hover {
+    color: beige;
+}
+.navbar-nav {
+    padding: 2%;
+    margin-left: auto;
+}
+.navbar-toggler {
+    margin-left: auto;
+    border: none;
+    font-size: 1rem;
+    color: white;
+    background: none;
+}
+.navbar-nav a {
+    margin-left: 2rem;
+}
+.nav-link {
+    font-size: 1.125rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.nav-link:hover {
+    color: #dc3545;
+}
+@media (max-width: 992px) {
+    .navbar-brand {
+        margin-left: 0;
+    }
+    .navbar-nav {
+        margin-left: 0;
+    }
+    .navbar-nav a {
+        margin-left: 1rem;
+    }
+}

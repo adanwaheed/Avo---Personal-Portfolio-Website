@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Nunito Sans", Arial, sans-serif;
+}
+.MAIN{
+    background-image: url('background1.jpg');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: cover;
+    height: auto;
+}
+header{
+    height: auto;
+    width: auto;
+}
+.div1 {
+    margin-top: 13rem;
+}
+
+.container1 {
+    overflow-y: hidden;
+    padding-left: 6%;
+}
+
+.container1 span {
+    text-align: left;
+    overflow-y: hidden;
+    padding-left: 4px;
+    color: rgb(155, 148, 148);
+    font-size: 1.3rem;
+}
+
+.container1 span i {
+    color: #dc3545;
+    font-size: 1rem;
+}
+
+.container1 span a {
+    text-align: left;
+    color: rgb(155, 148, 148);
+    text-decoration: none;
+}
+
+.container1 span a:hover {
+    color: #dc3545;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.text1 {
+    text-align: left;
+    padding-top: 2rem;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 8.5rem;
+}
+
+/* Responsive Styles */
+
+/* For Tablets */
+@media (max-width: 992px) {
+    .div1 {
+        margin-top: 10rem;
+    }
+
+    .container1 {
+        margin-left: 0;
+    }
+
+    .container span {
+        font-size: 1.1rem;
+    }
+
+    .text1 {
+        font-size: 2.5rem;
+        margin-bottom: 6rem;
+    }
+}
+
+/* For Mobile Devices */
+@media (max-width: 768px) {
+    .div1 {
+        margin-top: 8rem;
+    }
+
+    .container1 {
+        margin-left: 0;
+    }
+
+    .container span {
+        font-size: 1rem;
+    }
+
+    .text1 {
+        font-size: 2rem;
+        margin-bottom: 4rem;
+    }
+}
+
+/* For Smaller Mobile Devices */
+@media (max-width: 576px) {
+    .div1 {
+        overflow-y: hidden;
+        margin-top: 5rem;
+    }
+
+    .container1 {
+        margin-left: 0;
+    }
+
+    .container1 span {
+        font-size: 0.9rem;
+    }
+
+    .text1 {
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+}
+
+.heading2{
+    padding-top: 10%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    padding-bottom: 4%;
+}
+
+
+.div8 {
+    margin-left: 12rem;
+    margin-right: 12rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    justify-content: space-between;
+}
+
+.blog-card {
+    border-radius: 8px;
+    width: calc(25% - 20px);
+    text-align: center;
+    margin-bottom: 10%;
+    box-sizing: border-box;
+}
+
+.blog-card img {
+    width: 100%;
+    height: auto;
+}
+
+.blog-card h3 {
+    text-align: left;
+    font-size: 1.1rem;
+    margin: 15px 0;
+    color: #333;
+}
+
+.blog-meta {
+    text-align: left;
+    font-size: 0.875rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.blog-meta span {
+    margin-right: 10px;
+}
+
+.blog-card p {
+    font-size: 0.875rem;
+    color: #666;
+    text-align: left;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .blog-card {
+        max-width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 900px) {
+    .blog-card {
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .heading2 {
+        font-size: 1.5rem;
+    }
+
+    .blog-card {
+        font-size: 20px;
+        max-width: 100%;
+    }
+
+    .div8 {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        padding: 0;
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.pagination a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #ddd;
+}
+
+.pagination .active {
+    background-color: #d0002c;
+    color: #fff;
+    border-color: #d0002c;
+}
+
+.pagination .prev,
+.pagination .next {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.pagination .prev:hover,
+.pagination .next:hover {
+    background-color: #f2f2f2;
+}
+
+.footer {
+    height: 80vh;
+    background-color: #000;
+    color: #6b6868;
+    padding: 50px 0;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 1rem;
+    font-weight: bolder;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.footer-section p,
+.footer-section a {
+    line-height: 1.5;
+    color: #ccc;
+    font-size: 14px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.footer-section .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #ccc;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-bottom i {
+    color: #817a7a;
+}
+
+.footer-bottom a {
+    color: #dc3545;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #dc3545;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .footer{
+        height: auto;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-section {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .footer-section p, .footer-section a {
+        text-align: center;
+    }
+    
+    .social-icons a {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer{
+        height: auto;
+    }
+    .footer-section {
+        text-align: center;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+}
